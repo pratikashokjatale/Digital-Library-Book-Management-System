@@ -18,6 +18,8 @@ import com.app.service.BookService;
 
 
 
+
+
 @Controller
 public class BookController {
 
@@ -80,5 +82,24 @@ public class BookController {
 		}
 		
 		
+	@RequestMapping("/search")
 	
+	public String serchBook(@RequestParam("search") String title,Model m) {
+		
+		List<Book>result=bs.findByTitle(title);
+		if(result.size()>0) {
+			m.addAttribute("data", result);
+		}else {
+			
+			m.addAttribute("message", "no record found " +title);
+		}
+		
+	
+		return "viewAllbook";
+	}
+	
+	@RequestMapping("/exit")
+	  public void exit() {
+	        System.exit(0);
+	    }
 }

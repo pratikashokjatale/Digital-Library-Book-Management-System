@@ -743,7 +743,9 @@ section{
 
 
 
-
+.btnse{
+background-color: #FFFF;
+}
 
 
 
@@ -1003,8 +1005,8 @@ var swiper = new Swiper(".blogs-slider", {
         <a href="#" class="logo"> <i class="fas fa-book"></i> bookly </a>
 
         <form action="search" class="search-form">
-            <input type="search" name="search" placeholder="search here..." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
+            <input type="search" name="search" placeholder="search book using title here..." required="required" id="search-box">
+         <button class="btnse"><label for="search-box" class="fas fa-search"></label></button>
         </form>
 
         <div class="icons">
@@ -1022,7 +1024,7 @@ var swiper = new Swiper(".blogs-slider", {
             <a href="goToAddBook">Add a Book </a>
             <a href="viewbook">View All Book</a>
             <a href="#reviews">reviews</a>
-            <a href="#blogs">blogs</a>
+            <a href="exit">Exit</a>
         </nav>
     </div>
 

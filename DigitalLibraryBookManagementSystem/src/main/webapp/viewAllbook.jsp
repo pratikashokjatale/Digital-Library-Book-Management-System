@@ -93,12 +93,12 @@
         
     </style>
 </head>
-<body>
+
  <img class="animated-image" src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" width="10%" alt="Animated Book">
-<!--  <form action="" class="search-form">
-            <input type="search" name="" placeholder="search here..." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-        </form> -->
+ 
+
+
+ 
 <h1>Library Book List</h1>
 <table border="0">
     <tr>

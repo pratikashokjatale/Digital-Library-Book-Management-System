@@ -51,6 +51,11 @@ public List<Book> updatestudent(Book s) {
 	return br.findAll();
 }
 
+public List<Book> findByTitle(String title) {
+	// TODO Auto-generated method stub
+	return br.findByTitle(title);
+}
+
 
 }
 
